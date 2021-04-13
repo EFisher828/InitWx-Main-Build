@@ -6,10 +6,6 @@ const clearMap = () => {
 			map.getLayers().forEach(layer => {
 				if (layer && layer.get('name') === 'ID') {
 					map.removeLayer(layer);
-				} else if (layer && layer.get('name') === 'bigCities') {
-					map.removeLayer(layer);
-				} else if (layer && layer.get('name') === 'mediumCities') {
-					map.removeLayer(layer);
 				} else if (layer && layer.get('name') === 'smallCities') {
 					map.removeLayer(layer);
 				} else if (layer && layer.get('name') === 'Warning') {
